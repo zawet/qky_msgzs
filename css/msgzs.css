@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*替换头部主题色*/
+.qkyhead_nav>li.active>a {background: #2b9b89  !important;}
+.qkyhead_pjname {color: #2b9b89!important;}
+
 /*名师工作室图标字体架构*/
 @font-face {font-family: "app_icon";
   src: url('../iconfont/appicon_font/iconfont.eot'); /* IE9*/
