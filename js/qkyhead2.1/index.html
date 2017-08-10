@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="qky2.ico">
+    <title>全课云UI_头部插件</title>  
+</head>
+
+<body style="height:2000px">
+<div id="qkyhead"></div>
+<script src="js/jq/1.11.1/jquery.min.js"></script>
+<script src="js/qkyhead2.1.js"></script>
+<script>
+$(function(){
+	$("#qkyhead").qkyhead();
+	//$("#qkyhead").qkyhead({logosrc:"images/nav_logo/logo.png",theme:"black_blue",themesrc:"css/theme/"});//加载头部时直接初始化其他主题
+	//qkyhead_changetheme("black_blue");//渲染完后，独立改主题
+});
+</script>
+</body>
+</html>

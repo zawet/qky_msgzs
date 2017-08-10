@@ -270,12 +270,14 @@
 <script type="text/javascript" src="bil/jqui1.11.4/jquery-ui.min.js" ></script>
 <script language="JavaScript" charset="utf-8" src="js/qky_ui.js"></script>
 <script language="JavaScript" charset="utf-8" src="js/qkyui_cal.js"></script>
-<script src="http://open.qky100.com/qkynav/2.0/js/qkynav.js"></script>
-<script src="js/qkyNavConfig.js"></script>
+<!--<script src="http://open.qky100.com/qkynav/2.0/js/qkynav.js"></script>
+<script src="js/qkyNavConfig.js"></script>-->
+<script src="js/qkyhead2.1/js/qkyhead2.1.js"></script>
 <script>
 
 $(function(){
-	$("#qkynav").qkyNav(qkyNavConfig);
+	//$("#qkynav").qkyNav(qkyNavConfig);
+	$("#qkynav").qkyhead();
 	qkysel();
 	$(".more_but").click(function(){
 		if($(this).attr("isc")=="no"){
