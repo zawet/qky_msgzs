@@ -135,4 +135,5 @@
 .pop_cont span.one{ color:#2b9b89; border-bottom:1px dashed #eee; margin-bottom:10px; padding-bottom:5px;}
 .pop_cont span{ display:block;}
 
-.tea_name .pop_box,.pwd100{ width:100%; left:0;}
+.pwd100{ width:100%; left:0;}
+li .pop_box{ position: inherit; top:0; left:0; width:100%; float:none; z-index:1; margin-top:5px; background:#fff;}

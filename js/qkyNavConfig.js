@@ -11,9 +11,9 @@ qkyNavConfig={
 
     ],//主导航条
     "theme": "white_green",
-    "showApps": true,
+    "showApps": false,
     "showInfo": true,
-    "showMessages": true,
+    "showMessages": false,
     "proportion":0.5,
     qkyNavAfter: function () {
         //console.log("导航栏已渲染完成");
