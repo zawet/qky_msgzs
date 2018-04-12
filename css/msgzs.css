@@ -95,16 +95,17 @@
 .mstab td.one{border:none; padding-left:16px; text-align:left;}
 
 
-.contbox{ border:1px solid #eee; border-radius:4px; padding:16px; margin:16px 0; width:90%;}
+.contbox{ padding:20px; box-sizing: border-box;width:100%; border-bottom: 1px dashed #eee;}
 .conttit{ margin-bottom:20px;}
 .conttit label{ display:block; font-size:22px; color:#2b9b89; font-weight:700;}
 .conttit span{ margin-top:10px; display:block; color:#717171;}
 .contmain{color:#717171; line-height:24px;}
 
 
-.reply_li{ border-bottom:1px solid #eee; padding:16px 0;}
-.reply_tx{ width:48px; height:48px; border-radius:50%;}
-.reply_tx img{ width:100%; height:100%; border-radius:50%;}
+.reply_li{ border-bottom:1px dashed #eee; padding:16px 0;}
+.reply_tx{ width:8%;}
+.reply_tx img{ border-radius:50%; max-width:48px; display: block; margin: 0 auto;box-shadow: 0 2px 6px #aaa;}
+.reply_main { width: 92%;}
 .reply_main span{ color:#a4a4a4;}
 
 .addfj{ position:absolute; bottom:3px; right:16px; width:135px; border-left:1px solid #eee; text-align:center; height:140px;}
@@ -137,3 +138,45 @@
 
 .pwd100{ width:100%; left:0;}
 li .pop_box{ position: inherit; top:0; left:0; width:100%; float:none; z-index:1; margin-top:5px; background:#fff;}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.cloudtable .table>thead >tr >th{ background: #f9f9f9; color: #777; border-right: 1px solid #fff; padding: 5px 10px;text-align:left;}
+.cloudtable .table>tbody >tr >td{ line-height: 30px;color: #999 !important; cursor: pointer;    border-top:none;    border-bottom: 1px solid #eee;padding: 10px;}
+.cloudtable .table .res_tablist{line-height: 30px; color: #737373 !important; }
+.cloudtable .table .res_tablist img{ width: 28px; float: left; margin-right: 5px;}
+.cloudtable .table .res_tablist span.resname{ width: 80%; line-height: 30px; float: left; display: block;}
+.cloudtable .table>tbody >tr.active td,.cloudtable .table>tbody >tr:hover td{background: #d7eeea; color: #2b9b89;}
+
+.cloud_input{ width: 100%; box-sizing: border-box; padding: 5px 10px; background: #d7eeea;}
+.cloud_input input{ width: 90%; background: #fff;box-sizing: border-box;  padding: 0 15px; border: none; line-height: 30px; font-size: 14px; color: #535353; float: left;}
+.cloud_input button{ float: left; width: 10%;background: #2b9b89; height: 30px; line-height: 30px; color: #fff; cursor: pointer;}
+
+.res_cloud_ban2 {
+  padding: 10px 0;
+
+  background: #e6f5f2;
+}
+.res_path {
+  color: #535353;
+  cursor: pointer;
+  display: block;
+  float: left;
+  line-height: 20px;
+  padding: 0 10px;
+  border-right: 1px solid #ddd;
+}
+.res_type {
+  color: #2b9b89;
+  cursor: pointer;
+  display: block;
+  float: left;
+  line-height: 20px;
+  padding: 0 10px;
+}

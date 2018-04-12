@@ -82,12 +82,13 @@
                     <a href="#">下一页</a>
            		</div>
             </div>
-            <div class="fl sz_right ycc">
+            <div class="fl sz_right ycc"> 
                 <div class="qkysel clear3">
                     <a class="qkychbox trn fang h34 fl mt10 w18 ml16 zhu" id="zy"><i class="qkyicon">&#xe69f;</i></a><label class="fl mr6 mt4">全选</label>
                     <a class="qkybut brad4 fhbg M min_cbut fz_18 fl ml26" onClick="popIn('#delmsg')"><i class="appicon mr6 fz_20">&#xe61d;</i>全部删除</a>  
                     <a class="qkybut brad4 hbg M min_cbut ba_ye brc_ye fz_18 fl ml16"><i class="appicon mr6 fz_20">&#xe61a;</i>下载</a>
-                    <a class="qkybut brad4 hbg M min_cbut ba_ye brc_ye fz_18 fl ml16 po_r"><i class="appicon mr6 fz_20">&#xe61a;</i>上传<input type="file" class="ycfile"></a>
+                    <a class="qkybut brad4 hbg M min_cbut ba_ye brc_ye fz_18 fl ml16 po_r"><i class="qkyicon mr6 fz_20">&#xe6d9;</i>上传<input type="file" class="ycfile"></a>
+                    <a class="qkybut brad4 hbg M min_cbut  fz_16 fl ml16" onClick="popIn('#cloudup')"><i class="qkyicon mr6 fz_20">&#xe6a6;</i>从云盘上传</a>
                 </div>
                 <table cellpadding="0" cellspacing="0" border="0"  class="qkytable mt16 pa_lr16 mstab">
                     <tr><th colspan="4" class="fz_22 fz_we top_th"><i class="appicon mr6 fz_24">&#xe604;</i>学科资源</th></tr>
@@ -271,6 +272,111 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+<!--云盘弹窗-->
+
+<div class="qky_maskbox" id="cloudup">
+        <div class="qky_maskbg"></div>
+        <div class="qky_maskmian XXL">
+            <div class="qky_masktit">我的云盘<a class="maskclose" onClick="popOut('#cloudup')"><i class="appicon">&#xe622;</i></a></div>
+            <div class="qky_maskcont">
+                    <div class="clear3 cloud_input">
+                            <input type="text" placeholder="请输入关键字搜索">
+                            <button type="button">搜索</button>
+                    </div>
+                    <div class="clear3 res_cloud_ban2">
+                            <div class="fl pa0 clear3">
+                              <a class="res_path"><</a>
+                              <a class="res_path">文件夹1</a>
+                              <a class="res_path">文件夹1-2</a>
+                            </div>
+                            <div class=" fr pa0">
+                              <a class="res_type active">全部</a>
+                              <a class="res_type">文档</a>
+                              <a class="res_type">图片</a>
+                              <a class="res_type">视频</a>
+                              <a class="res_type">音乐</a>
+                              <a class="res_type">其他</a>
+                            </div>
+                          </div>
+                          <div class=" cloudtable">
+                                <table class="table " >
+                                  <thead><tr><th width="50%">名称</th><th>大小</th><th>修改日期</th></tr></thead>
+                                  <tbody>
+                                    <tr class="files">
+                                      <td class="res_tablist clear">
+                                        <img src="images/office_icon/folder.png" alt="">
+                                        <span class="dian3 resname">资源平台</span>
+                                      </td><td></td><td></td>
+                                    </tr>
+                                    <tr class="files">
+                                      <td class="res_tablist">
+                                        <img src="images/office_icon/folder.png" alt="">
+                                        <span class="dian3 resname">名师工作室</span>
+                                      </td><td></td><td></td>
+                                    </tr>
+                                    <tr class="files">
+                                      <td class="res_tablist">
+                                        <img src="images/office_icon/folder.png" alt="">
+                                        <span class="dian3 resname">小学教研活动</span>
+                                      </td>
+                                      <td></td><td>2016-12-14 16:45:12</td>
+                                    </tr>
+                                    <tr class="file">
+                                      <td class="res_tablist">
+                                        <img src="images/office_icon/mp3.png" alt="">
+                                        <span class="dian3 resname">新课标小学英语听力</span>
+                                      </td>
+                                      <td>380.91KB</td><td>2016-12-14 16:45:12</td>
+                                    </tr>
+                                    <tr class="file">
+                                      <td class="res_tablist">
+                                        <img src="images/office_icon/ppt.png" alt="">
+                                        <span class="dian3 resname">小学六年级上册语文第五课詹天佑PPT.ppt</span>
+                                      </td>
+                                      <td>467.97KB</td>
+                                      <td>2016-12-14 16:45:12</td>
+                                    </tr>
+                                    <tr class="file">
+                                      <td class="res_tablist">
+                                        <img src="images/office_icon/word.png" alt="">
+                                        <span class="dian3 resname">人教版六上——詹天佑.doc</span>   
+                                      </td>
+                                      <td>467.97KB</td>
+                                      <td>2016-12-14 16:45:12</td>
+                                    </tr>
+                                    <tr class="file">
+                                      <td class="res_tablist">
+                                        <img src="images/office_icon/word.png" alt="">
+                                        <span class="dian3 resname">人教版六上——索溪谷的野.doc</span>
+                                      </td>
+                                      <td>467.97KB</td>
+                                      <td>2016-12-14 16:45:12</td>
+                                    </tr>
+                                    <tr class="file">
+                                      <td class="res_tablist">
+                                        <img src="images/office_icon/word.png" alt="">
+                                        <span class="dian3 resname">人教版六上——山中访友.doc</span> 
+                                      </td>
+                                      <td>467.97KB</td>
+                                      <td>2016-12-14 16:45:12</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                    
+                              </div>
+                <div class="t_c mb16 mt16">
+                <a class="qkybut hbg brad4 M  mr16" onClick="popOut('#cloudup');"><i class="appicon mr6">&#xe621;</i>确认</a>
+                <a class="qkybut hbg brad4 M" onClick="popOut('#cloudup')"><i class="appicon mr6">&#xe622;</i>取消</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 <script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
